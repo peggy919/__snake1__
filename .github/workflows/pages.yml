@@ -7,18 +7,17 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      NODE_VERSION: '20'
     steps:
       - uses: actions/checkout@v4
-      - name: Use Node.js
-        uses: actions/setup-node@v4
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v6
         with:
-          node-version: '18'
-      - name: Clear npm cache
-        run: npm cache clean --force
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
       - name: Install dependencies
-        run: |
-          rm -rf node_modules package-lock.json
-          npm install
+        run: npm ci
       - name: Build
         run: npm run build
       - name: Deploy to gh-pages
