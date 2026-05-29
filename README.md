@@ -1,20 +1,32 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 經典貪食蛇
 
-# Run and deploy your AI Studio app
+一個使用 React + Vite + Tailwind CSS 的經典貪食蛇遊戲。專案包含分數統計、難度設定、亮眼 UI 與流暢的遊戲體驗。
 
-This contains everything you need to run your app locally.
+## 本機執行
 
-View your app in AI Studio: https://ai.studio/apps/c6c4f287-d8b5-4f27-acea-ac4ecd13fd55
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
+1. 安裝依賴：
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. 啟動開發伺服器：
    `npm run dev`
+3. 建置專案：
+   `npm run build`
+
+## 工具
+
+- React
+- Vite
+- Tailwind CSS
+- TypeScript
+- lucide-react
+
+## GitHub Pages 部署
+
+本專案已設定為使用 GitHub Actions 自動部署至 GitHub Pages（`dist` 資料夾）。
+
+使用方式：
+
+1. 確認 repository 名稱為 `__SNAKE1__`。
+2. 將變更推到 `main` 分支，Actions 將會自動執行並部署。
+3. 若為專案頁面，網站會在 `https://<your-username>.github.io/__SNAKE1__/` 可用。
+
+注意：如尚未啟用 Pages，請至 GitHub repo 的 Settings → Pages，確認 Pages 已設定使用 `gh-pages`，並開啟必要權限。
