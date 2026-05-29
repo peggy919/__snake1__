@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700;900&family=JetBrains+Mono:wght@200;400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "Courier New", Courier, monospace;
+}
+
+@layer utilities {
+  /* 炫目霓虹文字和發光陰影效果 */
+  .text-neon-cyan {
+    color: #00D2FF;
+    text-shadow: 0 0 8px rgba(0, 210, 255, 0.6), 0 0 20px rgba(0, 210, 255, 0.3);
+  }
+  .text-neon-green {
+    color: #39FF14;
+    text-shadow: 0 0 8px rgba(57, 255, 20, 0.6), 0 0 20px rgba(57, 255, 20, 0.3);
+  }
+  .text-neon-purple {
+    color: #BC13FE;
+    text-shadow: 0 0 8px rgba(188, 19, 254, 0.6), 0 0 20px rgba(188, 19, 254, 0.3);
+  }
+  .text-neon-red {
+    color: #FF3131;
+    text-shadow: 0 0 8px rgba(255, 49, 49, 0.6), 0 0 20px rgba(255, 49, 49, 0.3);
+  }
+
+  .border-neon-cyan {
+    border-color: #00D2FF;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.25);
+  }
+  .border-neon-green {
+    border-color: #39FF14;
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.25);
+  }
+  .border-neon-purple {
+    border-color: #BC13FE;
+    box-shadow: 0 0 15px rgba(188, 19, 254, 0.25);
+  }
+  .border-neon-red {
+    border-color: #FF3131;
+    box-shadow: 0 0 15px rgba(255, 49, 49, 0.25);
+  }
+
+  /* 藝術霓虹呼吸背景燈效 */
+  .bg-artistic-gradient {
+    background-color: #050505;
+    background-image: 
+      radial-gradient(circle at 12% 18%, rgba(188, 19, 254, 0.08) 0%, transparent 45%),
+      radial-gradient(circle at 88% 82%, rgba(0, 210, 255, 0.08) 0%, transparent 45%);
+  }
+}
+

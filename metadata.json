@@ -1,0 +1,6 @@
+{
+  "name": "經典貪食蛇",
+  "description": "一個精美的 HTML5 Canvas 經典貪食蛇遊戲，配有粒子特效、不同難度、分數統計以及流暢的主題介面。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
