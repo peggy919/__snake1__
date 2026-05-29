@@ -14,7 +14,9 @@ jobs:
         with:
           node-version: '18'
       - name: Install dependencies
-        run: npm ci
+        run: npm install
+      - name: Rebuild native modules
+        run: npm rebuild
       - name: Build
         run: npm run build
       - name: Deploy to gh-pages
